@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "annas-hamsters",
+  "private_key_id": "25c0fdc43ea69ef7be199444c2142b74b4459107",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDZ1eNX9gdhUANN\nE/Krx5QbNeY/+F5Gv2hONcwjxCt7xo1MeTUiFlvaYik28GiNghVHLQAE68LNNS5C\n2ec1WlfcDCS97uXbrpy0iGOXZHl7orCwZ7zYsO+MF2hpX0q9FqVsrL/4u46Ta/gQ\nVyCraplHZdvf4QHf0nMdhBugemjm7HAmIcG/sxaZOmj5qx7HYvaw/msVSEb3qnLh\nO1DY7uA6JQtUkBt7HKNjGHzPo7ZTiNvV0J/uMIDkoAintMrRKRvJW80VRbQeCpTB\nTL4JU4x3fXaaw0QPLmTtWwSX3zKwrybV04C9ZWvtJhljtgohkIXMZgmLeVouQezy\nDWf41BlvAgMBAAECggEADGUIL4wXNWlJFsyoxS9w9O9nL4KhUqM3eyPCftJ9quhM\nR+qppEvjZBSrxa1+NXcOYONlmeIUTnrVLAacCkQeta2XNZtvRsWzsu4DxKx54RgL\nt63fZ/EBYFZAoaZDaWjtdraJocyCO08saTmb6UUCfbaFAUMbSTH/TNGkhMgSSflV\nMYroSI2nr+QJ21NfEnQBM2/0gqV4iZbEvJ3rp7PRd/Kv7kvWhQuPx2FA9vBISNng\nYae6MwHttARyNTLuTKVJED0YmHMra1xmTlRg1WOKv2vzoIXsQ8VCcifvii26V9Sp\nNlzw7Xyl/+OfVj7UoLpnp89AFDYRuWNzEaDEHNYBOQKBgQDzUNo+TtiOfk++E10I\n+2rx/9cvTOR6Rey1c3YS7XcOWUtsZA4xM951pbvcQIh6rkEBp3XBQEn1MktH3AXD\n/0luYiNvACdlvXhjdlJpNZUrNsr0KjvRpJgya+g703Mb2yLNMu0PhRK+dolSQQT/\nB8BXeFdaz1exT+n2DWQzvuR2iwKBgQDlMP2E/PmLozU9cdtpFSVIfSx0YO8Uf8+R\nH1NmUAJqKZwMk5Ha1v4jpukh4m6PZA0SKfQtgkxgCchHCG4vjxrOUdvWUl8NmlGu\n8WjqxvLjfINXxk4jSFzKQ8YCod9Rj6k/0mVtRwscF457oNxe9EJAtk22QTxejn2N\nyHTo3+0pLQKBgEU8t63NT/BUXyquZeX9bTRJ4hjSn51vsmj73xiJvDw4Cq9gVW2I\n3f/KVofZUTzfwx3OYkLIoYMFeciMApQAXAvuHzkh6RQZc12SOOc5WSY/5EbQkc8Z\nMDoA3MfRZssBc4jCuhSVgHz0TCU83UgZE5GQbAMqR0DshZ3/t4jGBEr7AoGAHKiy\nmuWTQs3Gw4cwO4SkY9sbKvZQDw0oZGo5YIrSsnm/hKcTTv0hTE37yvvofU+yfrn2\nSZaIfF3cyF0agiHv5SrBRZyJPEc2vZx8VRdJmf6g4eHvNWRADh7JbNzW8vj23f8u\nJasDjaC4dWcZB1qdyj/Bme+wX9aLhqYxUEln+4UCgYEA8jKD5V/f8ATQ0sxGtuMC\nrAC3SpaB4ognG2tER6gFAfN63zoDLBeCIfu7K6jR7eFT0qFoQzyJhBfNlPhpvXIB\nFhXNfTqtE6DXNk9joNOAOVD4A22za2jT456GGecBX85mPBE9Mp0SsP8Khd/pECYx\nnIwaPYXGoJe1h2CRFWGShhE=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fqd61@annas-hamsters.iam.gserviceaccount.com",
+  "client_id": "100222355569983501619",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fqd61%40annas-hamsters.iam.gserviceaccount.com"
+}
