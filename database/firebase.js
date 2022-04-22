@@ -5,7 +5,12 @@ import { getFirestore } from 'firebase/firestore'
 // Require-funktionen finns inte om man använder "import"
 import { createRequire } from 'module'
 const require = createRequire(import.meta.url)
-const firebaseConfig = require('../firebaseConfig.json')
+let firebaseConfig
+if (process.env.PRIVATE_KEY) {
+  firebaseConfig = JSON.parse(process.env.PRIVATE_KEY)
+} else {
+  firebaseConfig = require('../firebaseConfig.json')
+}
 
 // OBS! firebaseConfig.json ska INTE finnas med i ditt git-repot. Lägg till filnamnet i din .gitignore. Se "exampleConfig.json" för exempel.
 
