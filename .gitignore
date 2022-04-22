@@ -3,3 +3,4 @@ dist/
 .DS_Store
 firebaseConfig.json
 serviceAccount.json
+service_key.json
