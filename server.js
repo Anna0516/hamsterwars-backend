@@ -2,27 +2,30 @@
 // Allmänna inställningar
 import express from 'express'
 import cors from 'cors'
-// import path from 'path'
+import path from 'path'
 const app = express()
 const PORT = 1975
 import hamsters from './routes/hamsters.js'
-// const staticFolder = path.join(__dirname, 'public')
+
+import { fileURLToPath } from 'url'
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 // Middleware
+
 // CORS öppnar vårt projekt så det kan användas från andra domäner
 app.use(cors())
+// Serve static files in this folder
+app.use(express.static(path.join(__dirname, 'img')))
 
 // Parse request body
 app.use(express.urlencoded({ extended: true }))
-
+app.use(express.json({ extended: true }))
 // Logger - skriv ut information om inkommande request
 app.use((req, res, next) => {
   console.log(`Logger: ${req.method}  ${req.url} `, req.body)
   next()
 })
-
-// Serve static files in this folder
-// app.use( express.static(staticFolder) )
 
 // Routes
 app.use('/hamsters', hamsters)

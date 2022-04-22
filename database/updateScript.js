@@ -14,7 +14,7 @@ const newObject = {
 }
 
 // Varning! Id kommer att ändras varje gång man tar bort och lägger till hamstrar med de andra skripten
-const oldDocId = 'z95qrp22Nl8my4WbL4hH'
+const oldDocId = 'JHZF55wxSwj42UxqoPVi'
 
 const collectionRef = collection(db, 'hamsters')
 const oldDocRef = doc(collectionRef, oldDocId)
