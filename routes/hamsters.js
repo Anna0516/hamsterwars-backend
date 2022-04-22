@@ -13,10 +13,7 @@ import {
 
 import { db } from '../database/firebase.js'
 
-// Data hämtas från Firestore!
-
 // Routes
-// RESTful == har GET, POST, PUT och DELETE
 
 router.get('/', async (req, res) => {
   const colRef = collection(db, 'hamsters')
@@ -45,15 +42,14 @@ router.get('/random', async (req, res) => {
   return
 })
 router.get('/:id', async (req, res) => {
-  const collectionRef = collection(db, 'hamsters') // här förbereder du endast vilken collection du vill kolla i
+  const collectionRef = collection(db, 'hamsters')
 
-  const docRef = doc(collectionRef, req.params.id) //vid localhost:1975/hamsters/0K3w3E91K2DGVC är req.params.id = 0K3w3E91K2DGVC
-  const snapShot = await getDoc(docRef) //Här sker hämtningen av ditt dokument därav ett promise
+  const docRef = doc(collectionRef, req.params.id)
+  const snapShot = await getDoc(docRef)
   const data = snapShot.data()
   if (!snapShot.exists()) {
     res.sendStatus(404)
   } else if (snapShot.exists()) {
-    //här kollar vi ifall det vi fick tillbaka från firestore finns eller ej
     res.status(200).send(data)
   } else res.sendStatus(400)
 })
@@ -72,8 +68,6 @@ router.post('/', async (req, res) => {
 
   const colRef = collection(db, 'hamsters')
 
-  // lägg till objekt som ett dokument i en collection
-  // addDoc returnerar Promise<DocumentReference>
   const newDocRef = await addDoc(colRef, newObject)
 
   console.log('Lade till nytt dokument med id=', newDocRef.id)
@@ -86,8 +80,6 @@ router.put('/:id', async (req, res) => {
   const oldDocRef = doc(collectionRef, oldDocId)
   const snapShot1 = await getDoc(oldDocRef)
   let newObject = req.body
-
-  // updateDoc - ändrar i ett befintligt document
 
   try {
     if (!snapShot1.exists()) {
